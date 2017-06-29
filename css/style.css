@@ -1,0 +1,71 @@
+body{
+	font-size: 80%;
+	background: url(../img/stardust.png) repeat;
+	background-color: #000; 
+	color: #fff;
+	font-family: 'Dosis', sans-serif;
+	
+	
+	padding: 20px;
+
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 60s;
+    animation-iteration-count:  infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+ 
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+}
+
+@-webkit-keyframes example {
+    0% {background-position: 1200px;}
+    50% {background-position: 2400px;}
+    100% {background-position: 3600px;}
+}
+
+@keyframes example {
+     0% {background-position: 1200px;}
+    50% {background-position: 2400px;}
+    100% {background-position: 3600px;}
+}
+@media all and (min-width: 1600px) {
+    #muns_center {
+        top: 260px;
+    }
+}
+@media all and (max-width: 1600px) {
+    #muns_center {
+        top: 80px;
+    }
+}
+#muns_center {
+	position: relative;
+}
+#muns_logo {
+	background: url(../img/muns_logo.png) no-repeat center center;
+	width: 500px;
+	height: 410px;
+}
+#muns_info
+{
+	text-align: center;
+	font-weight: 200;
+	font-size: 180%;
+}
+#muns_mail
+{
+	text-align: center;
+	margin-top: 18px;
+}
+#muns_mail a {
+	text-decoration: none;
+	color: #fff;
+}
